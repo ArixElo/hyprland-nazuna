@@ -9,6 +9,7 @@ You need few packages to make it work same like me:
 - `wpaperd` ~ for changing wallpapers each reboot, the path will be set to `~/.config/nazuna-walls` but for copyright reasons, i can't post any walls that I use here.
 - `clipse` ~ for clipboard managing.
 - `hyprshot` ~ for making screenshots.
+- `mako` ~ notification daemon.
 - `impala` ~ WiFi managing.
 - `bluetui` ~ Bluetooth managing.
 - `wiremix` ~ Audio managing.

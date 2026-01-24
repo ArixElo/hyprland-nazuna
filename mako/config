@@ -1,0 +1,63 @@
+# Nazuna Nanakusa Theme - Mako Config
+# ~/.config/mako/config
+
+# Appearance
+font=JetBrainsMono Nerd Font 11
+background-color=#1b192eee
+text-color=#ddd6f3
+border-color=#b968c7
+border-size=2
+border-radius=10
+padding=15
+margin=10
+
+# Icon settings
+icons=1
+max-icon-size=48
+icon-location=left
+
+# Progress bar
+progress-color=over #7b68ee
+
+# Layout
+width=350
+height=150
+max-visible=5
+sort=-time
+layer=overlay
+anchor=top-right
+default-timeout=5000
+ignore-timeout=0
+
+# Grouping
+group-by=app-name
+
+# Urgency levels
+[urgency=low]
+border-color=#2d2a4e
+background-color=#1b192edd
+default-timeout=3000
+
+[urgency=normal]
+border-color=#b968c7
+background-color=#1b192eee
+default-timeout=5000
+
+[urgency=high]
+border-color=#ff6b9d
+background-color=#2d2a4eff
+text-color=#ffaac6
+default-timeout=0
+
+# App-specific rules
+[app-name="Spotify"]
+border-color=#7b68ee
+background-color=#2d2a4eff
+
+[app-name="Volume"]
+border-color=#ffd866
+background-color=#1b192eff
+
+# Format
+format=<b>%s</b>\n%b
+markup=1
