@@ -14,8 +14,8 @@ You need few packages to make it work same like me:
 - `bluetui` ~ Bluetooth managing.
 - `wiremix` ~ Audio managing.
 - `battop` ~ Battery stats.
-- `fastfetch` ~ Displaying system info (logos are also gonna be set to ~/.config/nazuna-stickers, but for the same reason as walls I can't publish them)
-- `sddm` ~ Default login manager.
+- `fastfetch` ~ Displaying system info (logos are also gonna be set to `~/.config/nazuna-stickers/`, but for the same reason as walls I can't publish them)
+- `sddm` ~ Default login manager, (background.img is removed due to copyright reasons, you can use your own img, and also move the theme to: `/usr/share/sddm/themes/themename` and in `/etc/sddm/sddm.conf` set current theme to that)
 - `cava`  ~ for my theme.
 - `wttrbar` ~ for weather in waybar, available on **AUR**,
 - `zsh` ~ my favourite shell, with syntax higlighting and autocompletion.
