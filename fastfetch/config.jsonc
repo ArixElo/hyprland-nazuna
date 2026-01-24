@@ -1,0 +1,66 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "kitty-direct",
+    "source": "~/.config/nazuna-stickers/*.png",
+    "padding": {
+      "top": 1,
+      "right": 1,
+      "left": 1
+    }
+  },
+  "modules": [
+  {
+    "type":"title",
+    "format": "{host-name}",
+    "key": "Hostname",
+    "keyColor": "#fc00c3"
+  },
+  {
+    "type": "host",
+    "format": "{family}",
+    "key": "PC",
+    "keyColor": "#e612b5"
+  },
+  {
+    "type": "os",
+    "key": "OS",
+    "keyColor": "#f70ac4"
+  },
+  {
+    "type": "kernel",
+    "key": "Kernel version", 
+    "keyColor": "#c41fa1"
+  },
+  {
+    "type": "terminal",
+    "key": "Terminal",
+    "keyColor": "#b31eab"
+  },
+  {  
+    "type": "wm",
+    "key": "Window Manager",
+    "keyColor": "#c212e6"
+  },
+  {
+    "type": "uptime",
+    "key": "Uptime",
+    "keyColor": "#962791"
+  },
+  {
+    "type": "cpu",
+    "key": "CPU",
+    "keyColor": "#a123ba"
+  },
+    {
+    "type": "gpu",
+    "key": "GPU",
+    "keyColor": "#b968c7"
+  },
+  {
+    "type": "memory",
+    "key": "RAM:",
+    "keyColor": "#813f8f"
+  }
+  ] 
+}
