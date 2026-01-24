@@ -1,0 +1,6 @@
+[default]
+mode = "center"
+sorting = "random"
+
+[any]
+path = "~/.config/nazuna-walls"
