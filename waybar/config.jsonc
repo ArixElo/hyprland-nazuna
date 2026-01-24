@@ -1,0 +1,190 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 35,
+  "spacing": 1,
+  "margin-top": 10,
+  "margin-left": 10,
+  "margin-right": 10,
+  
+  "modules-left": ["hyprland/workspaces", "temperature", "backlight","custom/media"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["clock","custom/weather","group/tray-expander","network", "bluetooth","pulseaudio", "battery", "battery#bat1","custom/power"],
+  
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "一",
+      "2": "二",
+      "3": "三",
+      "4": "四",
+      "5": "五",
+      "6": "六",
+      "7": "七",
+      "8": "八",
+      "9": "九",
+      "10": "十"
+    },
+    "on-click": "activate",
+    "all-outputs": true,
+    "persistent-workspaces": {
+      "*": 5
+    }
+  },
+
+  "custom/weather": {
+    "format": "{}°C",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar --location Koszalin --lang pl --hide-conditions --nerd",
+    "return-type": "json"
+  },
+
+  "custom/media": {
+    "format": "{icon} {text}",
+    "format-empty": "🎜", 
+    "return-type": "json",
+    "max-length": 25,
+    "format-icons": {
+      "playing": "▶", 
+      "spotify": "",
+      "default": ""
+    },
+    "escape": true,
+    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
+    "interval": "once",
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl next",
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next"
+  },
+
+ "temperature": {
+    // "thermal-zone": 2, for t440p
+    "thermal-zone": 3, // for t460
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 95,
+    "format-critical": "{temperatureC}°C ",
+    "format": "{temperatureC}°C "
+},
+"custom/power": {
+    "format": "󰐥",
+    "tooltip": "Power Menu",
+    "on-click": "~/.config/waybar/scripts/power-menu.sh",
+    "class": "power"
+},
+"backlight": {
+    "device": "intel_backlight",
+    "format": "{percent}% {icon}",
+    "format-icons": ["󰃞", "󰃠"]
+},
+
+"bluetooth": {
+    "format": "",
+    "format-disabled": "󰂲",
+    "format-connected": "󰂱",
+    "format-no-controller": "",
+    "tooltip-format": "Devices connected: {num_connections}",
+    "on-click": "hyprctl dispatch exec '[float;center]' kitty bluetui"
+  },
+
+  
+  "hyprland/window": {
+    "icon": true,
+    "icon-size": 24,
+    "separate-outputs": true
+  },
+
+  "clock": {
+    "format": "{:L%A, %B %d, %Y (%R:%S)}",
+    "format-alt": "{:L%d %B %Y}",
+    "interval": 1,
+    "timezone": "Europe/Warsaw",
+    "locale": "pl_PL.utf-8"
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-discharging": "{capacity}% {icon}",
+    "format-charging": "{capacity}% {icon}",
+    "on-click": "hyprctl dispatch exec '[float;center]' kitty battop",
+    "format-plugged": "",
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+
+    "interval": 5,
+    "bat": "BAT0",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    }
+  },
+    "battery#bat1": {
+    "format": "{capacity}% {icon}",
+    "format-discharging": "{capacity}% {icon}",
+    "format-charging": "{capacity}% {icon}",
+    "on-click": "hyprctl dispatch exec '[float;center]' kitty battop",
+    "format-plugged": "",
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+
+    "interval": 5,
+    "bat": "BAT1",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    }
+  }, 
+  "network": {
+    "format-wifi": "",
+    "format-ethernet": "󰈀 {ipaddr}",
+    "format-disconnected": "󰖪 Disconnected",
+    "tooltip-format": "{ifname} via {gwaddr}",
+    "tooltip-format-wifi": "{essid} ",
+    "tooltip-format-ethernet": "{ifname} 󰈀",
+    "tooltip-format-disconnected": "Disconnected",
+    "on-click": "hyprctl dispatch exec '[float;center]' kitty impala",
+    "max-length": 50
+  },
+  
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰖁 Muted",
+    "format-icons": {
+      "headphone": "󰋋",
+      "hands-free": "󰋋",
+      "headset": "󰋋",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", "", ""]
+    },
+    "on-click": "hyprctl dispatch exec '[float;center]' kitty wiremix"
+  },
+    "group/tray-expander": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 600,
+      "children-class": "tray-group-item"
+    },
+    "modules": ["custom/expand-icon", "tray"]
+  },
+  "custom/expand-icon": {
+    "format": "",
+    "tooltip": false
+  },
+  "tray": {
+    "icon-size": 12, 
+    "spacing": 17
+  }
+}
