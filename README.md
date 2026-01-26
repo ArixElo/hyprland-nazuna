@@ -36,6 +36,7 @@ You need few packages to make it work same like me:
 ## Binds
 They are exact same as my Omarchy config had, but for the new people let me share them also: 
 - `SUPER+ESC` ~ Power Menu
+- `SUPER+SPACE` ~ Opens app launcher (vicinae)
 - `SUPER+A` ~ Opens floating cava visualizer
 - `SUPER+C` ~ Opens VSCode,
 - `SUPER+B` ~ Opens default browser
