@@ -3,6 +3,8 @@
 * {
     background-image: none;
     box-shadow: none;
+    font-family: "JetBrains Mono NF";
+    font-size: 16px;
 }
 
 window {
