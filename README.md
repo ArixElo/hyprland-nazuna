@@ -30,6 +30,8 @@ You need few packages to make it work same like me:
 - xdg-desktop-portal
 - xdg-desktop-portal-hyprland
 - hyprland-share-preview-picker (AUR only) 
+- network-manager
+- bluez
 
 ## Binds
 They are exact same as my Omarchy config had, but for the new people let me share them also: 
