@@ -1,0 +1,39 @@
+format = """ (bold white)
+(bold white)$username$hostname$directory$git_branch$git_status$aws
+[└─>](bold white) """
+
+[character]
+success_symbol = "[✨](bold white)"
+error_symbol = "[😾](bold red)"
+
+[username]
+style_user = "bold #b7bdf8"
+style_root = "bold red"
+format = "[$user]($style)"
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[@$hostname]($style) "
+style = "bold #b7bdf8"
+
+[directory]
+style = "bold #e1c1ee"
+format = "[$path]($style) "
+truncation_length = 3
+truncate_to_repo = false
+
+[git_branch]
+symbol = "🌸 "
+style = "bold #e6ee9c"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold #e6ee9c"
+format = "[$all_status$ahead_behind]($style) "
+untracked = ""
+
+[aws]
+symbol = "☁️  "
+style = "bold #99d1ce"
+format = "[$symbol$profile]($style) "
