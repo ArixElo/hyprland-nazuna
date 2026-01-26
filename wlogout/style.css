@@ -1,0 +1,58 @@
+/* Nazuna Nanakusa (Call of the Night) - Minimalistic Wlogout Theme */
+
+* {
+    background-image: none;
+    box-shadow: none;
+}
+
+window {
+    background-color: #14192d;
+}
+
+button {
+    color: #e8d5f2;
+    background-color: #2d2341;
+    border: 2px solid #5a4570;
+    border-radius: 12px;
+    margin: 12px;
+    padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    min-width: 140px;
+    min-height: 140px;
+    transition: all 0.3s ease;
+}
+
+button:focus,
+button:active,
+button:hover {
+    background-color: #4b3769;
+    border: 2px solid #ba8cd8;
+    outline-style: none;
+    box-shadow: 0 0 20px rgba(186, 140, 216, 0.4);
+}
+
+#lock {
+    background-image: image(url("/usr/share/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/usr/share/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("/usr/share/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("/usr/share/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("/usr/share/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/usr/share/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+}
