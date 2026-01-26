@@ -1,8 +1,9 @@
 # hyprland-nazuna
 **Welcome to my Hyprland config, after making my own [Omarchy distro config](https://github.com/ArixElo/my-omarchy-config), I thought, what if I __try__ making my own Hyprland config for distro that i use for many years, which is Arch. So here's my take on making a config inspired by my favourite anime character: Nazuna Nanakusa from Call of the Night. P.S: I spent over 15h doing that config without sleep and eating.**
 
-## Prerequisites
-You need few packages to make it work same like me:
+## Prerequisites and usage guide
+- Use dedicated script for automatic install packages and applying config: `./install-config.sh`
+Or, if you don't like scripts somehow, then here's what packages you need in order to apply everything without any issues:
 - `hyprland` ~ it's obvious.
 - `waybar` ~ I liked how Omarchy had their waybar looking, so I went with similiar looks, with some differences.
 - `vicinae` ~ App launcher that have looks and many extensions (for theme you need to copy it into `~/.local/share/vicinae/themes` and apply it from `CTRL+,` menu)
