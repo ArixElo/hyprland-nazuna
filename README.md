@@ -9,9 +9,7 @@ You need few packages to make it work same like me:
 - `wpaperd` ~ for changing wallpapers each reboot, the path will be set to `~/.config/nazuna-walls` but for copyright reasons, i can't post any walls that I use here.
 - `hyprshot` ~ for making screenshots.
 - `mako` ~ notification daemon.
-- `impala` ~ WiFi managing.
-- `wlogout` ~ Power menu
-- `bluetui` ~ Bluetooth managing.
+- `wlogout` ~ Power menu.
 - `wiremix` ~ Audio managing.
 - `battop` ~ Battery stats.
 - `fastfetch` ~ Displaying system info (logos are also gonna be set to `~/.config/nazuna-stickers/`, but for the same reason as walls I can't publish them)
@@ -28,6 +26,7 @@ They are exact same as my Omarchy config had, but for the new people let me shar
 - `SUPER+A` ~ Opens floating cava visualizer
 - `SUPER+C` ~ Opens VSCode,
 - `SUPER+B` ~ Opens default browser
+- `SUPER+SHIFT+B` ~ Opens bookmarks searching
 - `SUPER+V` ~ Opens clipboard history
 - `Print` ~ Screenshot of a app
 - `SUPER+Print` ~ Screenshot of whole window
