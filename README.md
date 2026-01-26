@@ -20,6 +20,17 @@ You need few packages to make it work same like me:
 - `starship` ~ for the looks in zsh.
 - `kitty` ~ Default terminal which I use in that config.
 
+### Dependencies for things to work
+- yay (for AUR apps)
+- adw-gtk-theme
+- qt5ct
+- qt6ct
+- kvantum
+- breeze-icons
+- xdg-desktop-portal
+- xdg-desktop-portal-hyprland
+- hyprland-share-preview-picker (AUR only) 
+
 ## Binds
 They are exact same as my Omarchy config had, but for the new people let me share them also: 
 - `SUPER+ESC` ~ Power Menu
