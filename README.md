@@ -5,11 +5,12 @@
 You need few packages to make it work same like me:
 - `hyprland` ~ it's obvious.
 - `waybar` ~ I liked how Omarchy had their waybar looking, so I went with similiar looks, with some differences.
-- `vicinae` ~ App launcher that have looks and many options,
+- `vicinae` ~ App launcher that have looks and many extensions (for theme you need to copy it into `~/.local/share/vicinae/themes` and apply it from `CTRL+,` menu)
 - `wpaperd` ~ for changing wallpapers each reboot, the path will be set to `~/.config/nazuna-walls` but for copyright reasons, i can't post any walls that I use here.
 - `hyprshot` ~ for making screenshots.
 - `mako` ~ notification daemon.
 - `impala` ~ WiFi managing.
+- `wlogout` ~ Power menu
 - `bluetui` ~ Bluetooth managing.
 - `wiremix` ~ Audio managing.
 - `battop` ~ Battery stats.
@@ -27,6 +28,10 @@ They are exact same as my Omarchy config had, but for the new people let me shar
 - `SUPER+A` ~ Opens floating cava visualizer
 - `SUPER+C` ~ Opens VSCode,
 - `SUPER+B` ~ Opens default browser
+- `SUPER+V` ~ Opens clipboard history
+- `Print` ~ Screenshot of a app
+- `SUPER+Print` ~ Screenshot of whole window
+- `SUPER+SHIFT+Print` ~ Screenshot of a selected region
 - `SUPER+D` ~ Opens Discord,
 - `SUPER+T` ~ Opens Telegram,
 - `SUPER+F` ~ Opens File Manager,
