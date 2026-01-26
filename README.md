@@ -5,9 +5,8 @@
 You need few packages to make it work same like me:
 - `hyprland` ~ it's obvious.
 - `waybar` ~ I liked how Omarchy had their waybar looking, so I went with similiar looks, with some differences.
-- `rofi` ~ here I decided instead of walker which Omarchy uses, I might try with something different for a app launcher.
+- `vicinae` ~ App launcher that have looks and many options,
 - `wpaperd` ~ for changing wallpapers each reboot, the path will be set to `~/.config/nazuna-walls` but for copyright reasons, i can't post any walls that I use here.
-- `clipse` ~ for clipboard managing.
 - `hyprshot` ~ for making screenshots.
 - `mako` ~ notification daemon.
 - `impala` ~ WiFi managing.
