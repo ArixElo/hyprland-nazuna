@@ -26,6 +26,7 @@ qt6ct
 satty
 starship
 wiremix
+waybar
 wpaperd
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
