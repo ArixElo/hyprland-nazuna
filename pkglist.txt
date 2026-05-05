@@ -2,6 +2,7 @@ adw-gtk-theme
 alsa-utils
 base
 base-devel
+noto-fonts-emoji
 brightnessctl
 btop
 cava
