@@ -13,26 +13,13 @@ Or, if you don't like scripts somehow, then here's what packages you need in ord
 - `wlogout` ~ Power menu.
 - `wiremix` ~ Audio managing.
 - `battop` ~ Battery stats.
-- `fastfetch` ~ Displaying system info (logos are also gonna be set to `~/.config/nazuna-stickers/`, but for the same reason as walls I can't publish them)
-- `sddm` ~ Default login manager, (background.img is removed due to copyright reasons, you can use your own img, and also move the theme to: `/usr/share/sddm/themes/themename` and in `/etc/sddm/sddm.conf` set current theme to that)
+- `fastfetch` ~ Displaying system info.
+- `ly` ~ Default login manager.
 - `cava`  ~ for my theme.
 - `wttrbar` ~ for weather in waybar, available on **AUR**,
 - `zsh` ~ my favourite shell, with syntax higlighting and autocompletion.
 - `starship` ~ for the looks in zsh.
 - `kitty` ~ Default terminal which I use in that config.
-
-### Dependencies for things to work
-- yay (for AUR apps)
-- adw-gtk-theme
-- qt5ct
-- qt6ct
-- kvantum
-- breeze-icons
-- xdg-desktop-portal
-- xdg-desktop-portal-hyprland
-- hyprland-share-preview-picker (AUR only) 
-- network-manager
-- bluez
 
 ## Binds
 They are exact same as my Omarchy config had, but for the new people let me share them also: 
@@ -65,4 +52,3 @@ Results of my configs:
 ![second result of my config](img/results2.png)
 ![third result of my config](img/results3.png)
 ![fourth result of my config](img/results4.png)
-![fifth result of my config](img/results5.png)
