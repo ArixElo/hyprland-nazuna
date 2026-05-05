@@ -11,12 +11,12 @@ EOF
 
     echo "Checking if you have installed required packages..."
     
-    if yay -Qi < pkglist.txt &>/dev/null && yay -Qi wttrbar &>/dev/null && yay -Qi hyprland-share-preview-picker &>/dev/null && yay -Qi battop &>/dev/null && yay -Qi vicinae &>/dev/null && yay -Qi wlogout &>/dev/null; then
+    if yay -Qi < pkglist.txt &>/dev/null && yay -Qi wttrbar &>/dev/null && yay -Qi hyprland-share-preview-picker &>/dev/null && yay -Qi battop &>/dev/null && yay -Qi vicinae-bin &>/dev/null && yay -Qi wlogout &>/dev/null; then
         echo "It looks like you have already installed all packages"
         __copy
     else
         echo "Installing required packages..."
-        sudo pacman -S - < pkglist.txt && yay -S wttrbar hyprland-share-preview-picker battop wlogout vicinae
+        sudo pacman -S - < pkglist.txt && yay -S wttrbar hyprland-share-preview-picker battop wlogout vicinae-bin
         __copy
     fi
 }
@@ -25,7 +25,6 @@ function __copy() {
     echo "Copying all configs to ~/.config and other required dirs also changing your terminal and your shell..."
     cp -r */ ~/.config/
     cp nazuna.toml ~/.local/share/vicinae/themes/
-    cp -r nazuna/ /usr/share/sddm/themes/
     cp .zshrc ~/home/$USER/
     mkdir -p ~/.config/zsh/
     touch ~/.config/zsh/history
