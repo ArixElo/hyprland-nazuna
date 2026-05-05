@@ -26,6 +26,7 @@ function __copy() {
     cp -r */ ~/.config/
     cp nazuna.toml ~/.local/share/vicinae/themes/
     cp .zshrc ~/home/$USER/
+    cp starship.toml ~/.config/
     mkdir -p ~/.config/zsh/
     touch ~/.config/zsh/history
     source ~/.zshrc
