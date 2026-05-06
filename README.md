@@ -17,7 +17,7 @@ Or, if you don't like scripts somehow, then here's what packages you need in ord
 - `ly` ~ Default login manager.
 - `cava`  ~ for my theme.
 - `wttrbar` ~ for weather in waybar, available on **AUR**,
-- `zsh` ~ my favourite shell, with syntax higlighting and autocompletion.
+- `zsh` ~ my favourite shell, with syntax higlighting and autocompletion (While using the install-config script it will ask you to provide the shell path for your user and root respectively, use `/bin/zsh`).
 - `starship` ~ for the looks in zsh.
 - `kitty` ~ Default terminal which I use in that config.
 
