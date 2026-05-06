@@ -143,11 +143,11 @@
   }, 
   "network": {
     "format-wifi": "",
-    "format-ethernet": "󰈀 {ipaddr}",
+    "format-ethernet": "󰈀",
     "format-disconnected": "󰖪 Disconnected",
     "tooltip-format": "{ifname} via {gwaddr}",
     "tooltip-format-wifi": "{essid} ",
-    "tooltip-format-ethernet": "{ifname} 󰈀",
+    "tooltip-format-ethernet": "󰈀",
     "tooltip-format-disconnected": "Disconnected",
     "on-click": "hyprctl dispatch exec '[float;center]' kitty impala",
     "max-length": 50
