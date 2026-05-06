@@ -7,7 +7,7 @@
   "margin-left": 10,
   "margin-right": 10,
   
-  "modules-left": ["hyprland/workspaces", "temperature", "backlight","custom/media"],
+  "modules-left": ["hyprland/workspaces", "backlight","mpris", "temperature"],
   "modules-center": ["hyprland/window"],
   "modules-right": ["clock","custom/weather","group/tray-expander","network", "bluetooth","pulseaudio", "battery", "battery#bat1","custom/power"],
   
@@ -40,28 +40,24 @@
     "return-type": "json"
   },
 
-  "custom/media": {
-    "format": "{icon} {text}",
-    "format-empty": "🎜", 
-    "return-type": "json",
-    "max-length": 25,
-    "format-icons": {
-      "playing": "▶", 
-      "spotify": "",
-      "default": ""
-    },
-    "escape": true,
-    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null",
-    "interval": "once",
-    "on-click": "playerctl play-pause",
-    "on-click-right": "playerctl next",
-    "on-scroll-up": "playerctl previous",
-    "on-scroll-down": "playerctl next"
-  },
+
+"mpris": {
+	"format": "{player_icon} {title} {position}",
+	"format-paused": "{status_icon} {title} {position}",
+  "interval": 1,
+	"player-icons": {
+		"default": "▶",
+		"mpv": "🎵"
+	},
+	"status-icons": {
+		"paused": "⏸"
+	},
+	// "ignored-players": ["firefox"]
+},
 
  "temperature": {
-    // "thermal-zone": 2, for t440p and my mobo as of now
-    "thermal-zone": 3, // for t460
+    "thermal-zone": 2, // for t440p and my mobo as of now
+    // "thermal-zone": 3, // for t460
     // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 95,
     "format-critical": "{temperatureC}°C ",

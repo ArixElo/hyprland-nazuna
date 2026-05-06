@@ -45,28 +45,28 @@
     padding-left: 20px;
     padding-right: 20px;
 }
-#custom-media {
+#mpris {
     margin-left: 8.5px;
     margin-right: 8.5px;
-    min-width: 150px;
+    min-width: 50px;
 }
 
-#custom-media.playing {
+#mpris.default {
     color: #b968c7;
 }
 
-#custom-media.paused {
+#mpris.paused {
     color: #402a44;
 }
 
-#custom-media.stopped {
+#mpris.stopped {
     opacity: 0;
     padding: 0;
     margin: 0;
 }
 
 
-#custom-media:hover {
+#mpris:hover {
     background-color: #1a1a1a;
 }
 #pulseaudio {
