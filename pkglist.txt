@@ -3,6 +3,8 @@ alsa-utils
 base
 base-devel
 noto-fonts-emoji
+noto-fonts
+noto-fonts-extra
 brightnessctl
 impala
 bluetui
