@@ -4,6 +4,8 @@ base
 base-devel
 noto-fonts-emoji
 brightnessctl
+impala
+bluetui
 btop
 cava
 fastfetch
