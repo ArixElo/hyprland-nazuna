@@ -8,6 +8,7 @@ noto-fonts-extra
 brightnessctl
 impala
 bluetui
+s-tui
 btop
 cava
 fastfetch
