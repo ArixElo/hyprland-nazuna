@@ -25,7 +25,8 @@ function __copy() {
     echo "Copying all configs to ~/.config and other required dirs also changing your terminal and your shell..."
     cp -r */ ~/.config/
     cp nazuna.toml ~/.local/share/vicinae/themes/
-    cp .zshrc ~/home/$USER/
+    chsh && sudo chsh &
+    cp .zshrc /home/$USER/
     cp starship.toml ~/.config/
     mkdir -p ~/.config/zsh/
     touch ~/.config/zsh/history
