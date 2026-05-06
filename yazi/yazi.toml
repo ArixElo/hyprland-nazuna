@@ -1,0 +1,4 @@
+[opener]
+edit = [
+  { run = 'nano "$@"', block = true, desc = "nano" }
+]

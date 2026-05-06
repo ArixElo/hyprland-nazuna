@@ -11,6 +11,8 @@ Or, if you don't like scripts somehow, then here's what packages you need in ord
 - `hyprshot` ~ for making screenshots.
 - `mako` ~ notification daemon.
 - `wlogout` ~ Power menu.
+- `dolphin` ~ GUI file manager.
+- `yazi` ~ TUI file manager.
 - `wiremix` ~ Audio managing.
 - `battop` ~ Battery stats.
 - `fastfetch` ~ Displaying system info.

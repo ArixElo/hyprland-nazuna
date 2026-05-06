@@ -1,0 +1,98 @@
+[mgr]
+prepend_keymap = [
+  # Quit / close
+  { on = "q", run = "quit", desc = "Wyjdź z Yazi" },
+  { on = "Q", run = "quit --no-cwd-file", desc = "Twarde wyjście bez zapisu cwd" },
+
+  # Quick movement
+  { on = "J", run = "arrow 10", desc = "10 w dół" },
+  { on = "K", run = "arrow -10", desc = "10 w górę" },
+  { on = "H", run = "leave", desc = "Wyjdź do parent directory" },
+  { on = "L", run = "enter", desc = "Wejdź do katalogu / otwórz" },
+
+  # Selection
+  { on = "v", run = "visual_mode", desc = "Tryb zaznaczania" },
+  { on = "V", run = "toggle_all --state=on", desc = "Zaznacz wszystko" },
+  { on = "<C-a>", run = "toggle_all", desc = "Przełącz zaznaczenie wszystkiego" },
+
+  # File actions
+  { on = "yy", run = "yank", desc = "Kopiuj plik(i)" },
+  { on = "dd", run = "yank --cut", desc = "Wytnij plik(i)" },
+  { on = "pp", run = "paste", desc = "Wklej plik(i)" },
+  { on = "D", run = "remove", desc = "Usuń" },
+  { on = "a", run = "create", desc = "Nowy plik / katalog" },
+  { on = "r", run = "rename --cursor=before_ext", desc = "Zmień nazwę" },
+
+  # Open / inspect
+  { on = "<Enter>", run = "open", desc = "Otwórz" },
+  { on = "o", run = "open", desc = "Otwórz" },
+  { on = "O", run = "open --interactive", desc = "Open with..." },
+  { on = "i", run = "spot", desc = "Podgląd informacji" },
+  { on = "z", run = "plugin zoxide", desc = "Skok przez zoxide" },
+
+  # Search / find
+  { on = "/", run = "find --smart", desc = "Szukaj w katalogu" },
+  { on = "n", run = "find_arrow", desc = "Następny wynik" },
+  { on = "N", run = "find_arrow --previous", desc = "Poprzedni wynik" },
+
+  # Hidden files and refresh
+  { on = ".", run = "hidden toggle", desc = "Pokaż / ukryj pliki ukryte" },
+  { on = "R", run = "refresh", desc = "Odśwież" },
+
+  # Go places
+  { on = [ "g", "h" ], run = "cd ~", desc = "Home" },
+  { on = [ "g", "c" ], run = "cd ~/.config", desc = "~/.config" },
+  { on = [ "g", "d" ], run = "cd ~/Downloads", desc = "Downloads" },
+  { on = [ "g", "p" ], run = "cd ~/Projects", desc = "Projects" },
+  { on = [ "g", "t" ], run = "cd /tmp", desc = "/tmp" },
+
+  # Tabs
+  { on = "tn", run = "tab_create --current", desc = "Nowa karta" },
+  { on = "th", run = "tab_switch -1", desc = "Poprzednia karta" },
+  { on = "tl", run = "tab_switch 1", desc = "Następna karta" },
+  { on = "tx", run = "close", desc = "Zamknij kartę / okno dialogowe" },
+
+  # Help
+  { on = "?", run = "help", desc = "Pomoc / keymapa" },
+]
+
+[tasks]
+prepend_keymap = [
+  { on = "q", run = "close", desc = "Zamknij task manager" },
+  { on = "<Esc>", run = "close", desc = "Zamknij task manager" },
+]
+
+[spot]
+prepend_keymap = [
+  { on = "q", run = "close", desc = "Zamknij podgląd informacji" },
+  { on = "<Esc>", run = "close", desc = "Zamknij podgląd informacji" },
+]
+
+[pick]
+prepend_keymap = [
+  { on = "<Esc>", run = "close", desc = "Anuluj wybór" },
+  { on = "q", run = "close", desc = "Zamknij picker" },
+  { on = "j", run = "arrow 1", desc = "W dół" },
+  { on = "k", run = "arrow -1", desc = "W górę" },
+  { on = "<Enter>", run = "close --submit", desc = "Wybierz" },
+]
+
+[input]
+prepend_keymap = [
+  { on = "<Esc>", run = "close", desc = "Anuluj input" },
+  { on = "<Enter>", run = "close --submit", desc = "Zatwierdź input" },
+]
+
+[confirm]
+prepend_keymap = [
+  { on = "<Esc>", run = "close", desc = "Anuluj" },
+  { on = "q", run = "close", desc = "Anuluj" },
+  { on = "y", run = "close --submit", desc = "Potwierdź" },
+  { on = "n", run = "close", desc = "Odrzuć" },
+]
+
+[help]
+prepend_keymap = [
+  { on = "q", run = "close", desc = "Zamknij help" },
+  { on = "<Esc>", run = "close", desc = "Zamknij help" },
+]

@@ -35,6 +35,7 @@ starship
 wiremix
 waybar
 wpaperd
+yazi
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdg-utils

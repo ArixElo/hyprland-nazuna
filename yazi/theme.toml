@@ -1,0 +1,49 @@
+[mgr]
+cwd = { fg = "#f7f7f7", bold = true }
+hovered = { fg = "#1a2027", bg = "#f7a8c9" }
+preview_hovered = { fg = "#1a2027", bg = "#d8a6ff" }
+
+# Selection / marks
+find_keyword = { fg = "#ff7fb9", bold = true }
+find_position = { fg = "#1a2027", bg = "#ffb3d9", bold = true }
+marker_copied = { fg = "#1a2027", bg = "#c58bff" }
+marker_cut = { fg = "#f7f7f7", bg = "#ff5fa2" }
+marker_marked = { fg = "#1a2027", bg = "#f7d6ff" }
+
+# Tabs
+tab_active = { fg = "#1a2027", bg = "#f7a8c9", bold = true }
+tab_inactive = { fg = "#ded1d7", bg = "#1a2027" }
+tab_width = 1
+
+[status]
+overall = { fg = "#f7f7f7", bg = "#1a2027" }
+sep_left = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+
+# Mode indicators
+progress_label = { fg = "#1a2027", bg = "#f7a8c9", bold = true }
+progress_normal = { fg = "#f7f7f7", bg = "#2a2230" }
+progress_error = { fg = "#f7f7f7", bg = "#ff5fa2" }
+
+[filetype]
+rules = [
+  { mime = "image/*", fg = "#d8a6ff" },
+  { mime = "video/*", fg = "#c58bff" },
+  { mime = "audio/*", fg = "#ff7fb9" },
+  { mime = "text/*", fg = "#f7f7f7" },
+  { mime = "application/zip", fg = "#f7d6ff" },
+  { mime = "application/x-tar", fg = "#f7d6ff" },
+  { mime = "application/*", fg = "#ded1d7" },
+  { mime = "inode/directory", fg = "#ffb3d9", bold = true },
+  { mime = "inode/symlink", fg = "#c58bff", bold = true },
+]
+
+[icons]
+# Subtelnie "nocny" zestaw, bez przesady z neonem
+dirs = [
+  { name = "Desktop", text = "󰍹", fg = "#f7a8c9" },
+  { name = "Documents", text = "󰈙", fg = "#d8a6ff" },
+  { name = "Downloads", text = "󰉍", fg = "#ff7fb9" },
+  { name = "Music", text = "󰝚", fg = "#c58bff" },
+  { name = "Pictures", text = "󰋩", fg = "#f7d6ff" },
+]
