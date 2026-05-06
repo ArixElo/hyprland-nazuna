@@ -6,7 +6,7 @@
 Or, if you don't like scripts somehow, then here's what packages you need in order to apply everything without any issues:
 - `hyprland` ~ it's obvious.
 - `waybar` ~ I liked how Omarchy had their waybar looking, so I went with similiar looks, with some differences.
-- `vicinae` ~ App launcher that have looks and many extensions (for theme you need to copy it into `~/.local/share/vicinae/themes` and apply it from `CTRL+,` menu)
+- `vicinae` ~ App launcher that have looks and many extensions.
 - `wpaperd` ~ for changing wallpapers each reboot, the path will be set to `~/.config/nazuna-walls` but for copyright reasons, i can't post any walls that I use here.
 - `hyprshot` ~ for making screenshots.
 - `mako` ~ notification daemon.
