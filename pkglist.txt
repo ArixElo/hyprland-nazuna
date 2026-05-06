@@ -13,6 +13,8 @@ cava
 fastfetch
 fzf
 git
+hyprpolkitagent
+polkit
 gnome-themes-extra
 hyprshot
 kitty
