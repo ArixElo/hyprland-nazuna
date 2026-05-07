@@ -11,12 +11,12 @@ EOF
 
     echo "Checking if you have installed required packages..."
     
-    if yay -Qi < pkglist.txt &>/dev/null && yay -Qi wttrbar &>/dev/null && yay -Qi hyprland-share-preview-picker &>/dev/null && yay -Qi battop &>/dev/null && yay -Qi vicinae-bin &>/dev/null && yay -Qi wlogout &>/dev/null; then
+    if yay -Qi < pkglist.txt &>/dev/null && yay -Qi wttrbar &>/dev/null && yay -Qi hyprland-share-preview-picker &>/dev/null && yay -Qi battop &>/dev/null && yay -Qi sysmenu &>/dev/null && yay -Qi wlogout &>/dev/null; then
         echo "It looks like you have already installed all packages"
         __copy
     else
         echo "Installing required packages..."
-        sudo pacman -S - < pkglist.txt && yay -S wttrbar hyprland-share-preview-picker battop wlogout vicinae-bin
+        sudo pacman -S - < pkglist.txt && yay -S wttrbar hyprland-share-preview-picker battop wlogout sysmenu
         __copy
     fi
 }

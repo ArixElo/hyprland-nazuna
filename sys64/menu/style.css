@@ -1,0 +1,120 @@
+/* ================================================
+   SYSMENU - Motyw Nazuna Nanakusa / Call of the Night
+   Paleta: nocna fuksja + purpura + ciemny granat
+   ================================================ */
+
+@define-color bg         #0F0A1F;
+@define-color bg_sec     #1A1229;
+@define-color bg_mid     #2D1B4E;
+@define-color accent     #D946EF;
+@define-color accent_alt #EC4899;
+@define-color purple     #A855F7;
+@define-color cyan       #22D3EE;
+@define-color gold       #FCD34D;
+@define-color fg         #F5F3FF;
+@define-color fg_muted   #C4B5FD;
+@define-color fg_faint   #9CA3AF;
+
+* {
+    font-family: 'JetBrainsMono Nerd Font', monospace;
+    font-size: 12px;
+    color: @fg;
+    transition: all 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#sysmenu.window {
+    background: alpha(@bg, 0.96);
+    border-radius: 16px;
+    border: 1px solid alpha(@accent, 0.4);
+    box-shadow:
+        0 0 0 1px alpha(@accent, 0.1),
+        0 8px 32px alpha(#000000, 0.6),
+        0 0 60px alpha(@accent, 0.08);
+    margin: 10px;
+}
+
+#sysmenu.window .box_layout_inner {
+    margin: 10px;
+}
+
+#sysmenu.fullscreen:not(.dock) {
+    background: alpha(@bg, 0.92);
+}
+
+#sysmenu entry {
+    background: alpha(@bg_mid, 0.8);
+    border: 1px solid alpha(@accent, 0.35);
+    border-radius: 10px;
+    padding: 8px 14px;
+    color: @fg;
+    font-size: 13px;
+    caret-color: @accent;
+    margin: 4px 4px 8px 4px;
+}
+
+#sysmenu entry:focus {
+    border-color: @accent;
+    box-shadow: 0 0 0 2px alpha(@accent, 0.2);
+    background: alpha(@bg_mid, 0.95);
+}
+
+#sysmenu entry placeholder {
+    color: @fg_faint;
+}
+
+#sysmenu flowboxchild {
+    background: transparent;
+    border-radius: 12px;
+    padding: 6px;
+    margin: 2px;
+}
+
+#sysmenu flowboxchild:hover {
+    background: alpha(@bg_mid, 0.9);
+    box-shadow: 0 0 0 1px alpha(@accent, 0.3);
+}
+
+#sysmenu flowboxchild:selected {
+    background: alpha(@bg_mid, 1.0);
+    box-shadow: 0 0 0 2px @accent;
+}
+
+#sysmenu flowboxchild label {
+    color: @fg_muted;
+    font-size: 11px;
+    margin-top: 4px;
+}
+
+#sysmenu flowboxchild:hover label,
+#sysmenu flowboxchild:selected label {
+    color: @fg;
+}
+
+#sysmenu .flowbox_recent {
+    border-bottom: 1px solid alpha(@accent, 0.2);
+    padding-bottom: 8px;
+    margin-bottom: 6px;
+}
+
+#sysmenu scrollbar {
+    background: transparent;
+    border: none;
+}
+
+#sysmenu scrollbar slider {
+    background: alpha(@accent, 0.3);
+    border-radius: 4px;
+    min-width: 4px;
+}
+
+#sysmenu scrollbar slider:hover {
+    background: alpha(@accent, 0.6);
+}
+
+#sysmenu scrolledwindow {
+    background: transparent;
+}
+
+#sysmenu viewport {
+    background: transparent;
+}
