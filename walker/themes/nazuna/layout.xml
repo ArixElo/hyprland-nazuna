@@ -16,8 +16,8 @@
         <property name="orientation">horizontal</property>
         <property name="valign">center</property>
         <property name="halign">center</property>
-        <property name="width-request">760</property>
-        <property name="height-request">620</property>
+        <property name="width-request">600</property>
+        <property name="height-request">570</property>
         <child>
           <object class="GtkBox" id="Box">
             <style>
@@ -26,7 +26,7 @@
             <property name="orientation">vertical</property>
             <property name="hexpand-set">true</property>
             <property name="hexpand">true</property>
-            <property name="spacing">14</property>
+            <property name="spacing">10</property>
             <child>
               <object class="GtkBox" id="SearchContainer">
                 <style>
@@ -34,42 +34,17 @@
                 </style>
                 <property name="overflow">hidden</property>
                 <property name="orientation">horizontal</property>
-                <property name="spacing">12</property>
                 <property name="halign">fill</property>
                 <property name="hexpand-set">true</property>
                 <property name="hexpand">true</property>
                 <child>
-                  <object class="GtkImage" id="SearchIcon">
-                    <property name="icon-name">weather-clear-night-symbolic</property>
+                  <object class="GtkEntry" id="Input">
                     <style>
-                      <class name="normal-icons"></class>
+                      <class name="input"></class>
                     </style>
-                  </object>
-                </child>
-                <child>
-                  <object class="GtkOverlay">
+                    <property name="halign">fill</property>
+                    <property name="hexpand-set">true</property>
                     <property name="hexpand">true</property>
-                    <child>
-                      <object class="GtkEntry" id="Input">
-                        <style>
-                          <class name="input"></class>
-                        </style>
-                        <property name="placeholder-text">night search...</property>
-                        <property name="halign">fill</property>
-                        <property name="hexpand-set">true</property>
-                        <property name="hexpand">true</property>
-                      </object>
-                    </child>
-                    <child type="overlay">
-                      <object class="GtkLabel" id="Typeahead">
-                        <property name="halign">start</property>
-                        <property name="valign">center</property>
-                        <property name="xalign">0</property>
-                        <style>
-                          <class name="typeahead"></class>
-                        </style>
-                      </object>
-                    </child>
                   </object>
                 </child>
               </object>
@@ -80,7 +55,7 @@
                   <class name="content-container"></class>
                 </style>
                 <property name="orientation">horizontal</property>
-                <property name="spacing">12</property>
+                <property name="spacing">10</property>
                 <child>
                   <object class="GtkLabel" id="ElephantHint">
                     <style>
@@ -98,7 +73,7 @@
                     <style>
                       <class name="placeholder"></class>
                     </style>
-                    <property name="label">Nothing in the dark</property>
+                    <property name="label">No Results</property>
                     <property name="hexpand">true</property>
                     <property name="vexpand">true</property>
                     <property name="valign">0.5</property>
@@ -113,9 +88,9 @@
                     <property name="overlay-scrolling">true</property>
                     <property name="hexpand">true</property>
                     <property name="vexpand">true</property>
-                    <property name="max-content-width">560</property>
-                    <property name="min-content-width">560</property>
-                    <property name="max-content-height">430</property>
+                    <property name="max-content-width">500</property>
+                    <property name="min-content-width">500</property>
+                    <property name="max-content-height">400</property>
                     <property name="propagate-natural-height">true</property>
                     <property name="propagate-natural-width">true</property>
                     <property name="hscrollbar-policy">automatic</property>
@@ -136,9 +111,7 @@
                   <object class="GtkBox" id="Preview">
                     <style>
                       <class name="preview"></class>
-                      <class name="preview-box"></class>
                     </style>
-                    <property name="visible">false</property>
                   </object>
                 </child>
               </object>
