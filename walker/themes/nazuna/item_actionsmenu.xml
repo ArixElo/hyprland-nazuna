@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <template class="Item" parent="GtkBox">
+    <property name="orientation">horizontal</property>
+    <property name="spacing">12</property>
+    <style>
+      <class name="item-box"/>
+    </style>
+
+    <child>
+      <object class="GtkImage" id="icon">
+        <property name="valign">center</property>
+        <style>
+          <class name="icon"/>
+          <class name="normal-icons"/>
+        </style>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkBox" id="text_box">
+        <property name="orientation">vertical</property>
+        <property name="hexpand">true</property>
+        <property name="valign">center</property>
+        <style>
+          <class name="text-content"/>
+        </style>
+
+        <child>
+          <object class="GtkBox">
+            <property name="spacing">8</property>
+            <child>
+              <object class="GtkLabel" id="text">
+                <property name="xalign">0</property>
+                <property name="hexpand">true</property>
+                <property name="ellipsize">end</property>
+                <style>
+                  <class name="item-text"/>
+                </style>
+              </object>
+            </child>
+            <child>
+              <object class="GtkLabel" id="plugin">
+                <property name="xalign">1</property>
+                <style>
+                  <class name="plugin"/>
+                </style>
+              </object>
+            </child>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkLabel" id="sub">
+            <property name="xalign">0</property>
+            <property name="ellipsize">end</property>
+            <style>
+              <class name="item-subtext"/>
+            </style>
+          </object>
+        </child>
+      </object>
+    </child>
+
+    <child>
+      <object class="GtkLabel" id="activation_label">
+        <property name="valign">center</property>
+        <style>
+          <class name="quick-activation"/>
+        </style>
+      </object>
+    </child>
+  </template>
+</interface>

@@ -11,12 +11,12 @@ EOF
 
     echo "Checking if you have installed required packages..."
     
-    if yay -Qi < pkglist.txt &>/dev/null && yay -Qi wttrbar &>/dev/null && yay -Qi hyprland-share-preview-picker &>/dev/null && yay -Qi battop &>/dev/null && yay -Qi sysmenu &>/dev/null && yay -Qi wlogout &>/dev/null; then
+    if yay -Qi < pkglist.txt &>/dev/null && yay -Qi aurlist.txt &>/dev/null; then
         echo "It looks like you have already installed all packages"
         __copy
     else
         echo "Installing required packages..."
-        sudo pacman -S - < pkglist.txt && yay -S wttrbar hyprland-share-preview-picker battop wlogout sysmenu
+        sudo pacman -S - < pkglist.txt && yay -S - < aurlist.txt
         __copy
     fi
 }
@@ -30,6 +30,7 @@ function __copy() {
     mkdir -p ~/.config/zsh/
     touch ~/.config/zsh/history
     source ~/.zshrc
+    elephant enable service
     echo "Restarting waybar..."
     pkill waybar && hyprctl dispatch exec waybar
     echo "Applying config is done, but for better experience: Change your location for wttrbar, and reboot your machine."

@@ -1,0 +1,233 @@
+@define-color window_bg_color rgba(10, 8, 20, 0.94);
+@define-color accent_bg_color #a855f7;
+@define-color accent_secondary_color #ff6ec7;
+@define-color theme_fg_color #f7efff;
+@define-color theme_fg_secondary_color rgba(247, 239, 255, 0.68);
+@define-color warning_bg_color #ff7edb;
+@define-color warning_fg_color #140b1f;
+@define-color error_bg_color #ff5d8f;
+@define-color error_fg_color #fff4fb;
+
+* {
+  all: unset;
+  font-family: "JetBrainsMono Nerd Font", "CaskaydiaCove Nerd Font", "Symbols Nerd Font", sans-serif;
+  color: @theme_fg_color;
+}
+
+popover {
+  background: rgba(20, 14, 34, 0.98);
+  border: 1px solid alpha(@accent_secondary_color, 0.30);
+  border-radius: 18px;
+  padding: 10px;
+  box-shadow: 0 10px 28px alpha(black, 0.45);
+}
+
+.normal-icons {
+  -gtk-icon-size: 18px;
+}
+
+.large-icons {
+  -gtk-icon-size: 34px;
+}
+
+scrollbar {
+  opacity: 0;
+}
+
+.box-wrapper {
+  margin: 24px;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid alpha(@accent_secondary_color, 0.24);
+  background: linear-gradient(180deg, rgba(18, 12, 30, 0.98), rgba(10, 8, 20, 0.96));
+  box-shadow:
+    0 24px 60px alpha(black, 0.45),
+    0 0 0 1px alpha(@accent_bg_color, 0.05),
+    0 0 36px alpha(@accent_bg_color, 0.12);
+}
+
+.box {
+  min-width: 760px;
+}
+
+.search-container {
+  padding: 14px 16px;
+  border-radius: 18px;
+  background: rgba(27, 18, 44, 0.96);
+  border: 1px solid alpha(@accent_secondary_color, 0.22);
+  box-shadow: inset 0 1px 0 alpha(white, 0.03);
+}
+
+.input placeholder {
+  color: alpha(@theme_fg_color, 0.45);
+}
+
+.input {
+  font-size: 18px;
+  caret-color: @accent_secondary_color;
+}
+
+.typeahead {
+  color: alpha(@theme_fg_color, 0.24);
+}
+
+.list {
+  margin-top: 16px;
+  border-radius: 18px;
+  background: alpha(@window_bg_color, 0.30);
+  padding: 8px;
+}
+
+child {
+  border-radius: 16px;
+}
+
+.item-box {
+  padding: 12px 14px;
+  border-radius: 16px;
+  margin: 4px 0;
+  border: 1px solid transparent;
+  background: rgba(21, 14, 35, 0.68);
+}
+
+child:selected .item-box {
+  background: linear-gradient(90deg, alpha(@accent_secondary_color, 0.20), alpha(@accent_bg_color, 0.16));
+  border: 1px solid alpha(@accent_secondary_color, 0.38);
+  box-shadow:
+    inset 0 1px 0 alpha(white, 0.04),
+    0 0 18px alpha(@accent_secondary_color, 0.10);
+}
+
+.icon {
+  margin-right: 14px;
+}
+
+.text-content {
+  min-width: 0;
+}
+
+.item-text {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.item-subtext {
+  font-size: 12px;
+  color: @theme_fg_secondary_color;
+  margin-top: 2px;
+}
+
+.plugin {
+  font-size: 11px;
+  font-weight: 700;
+  color: @accent_secondary_color;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.match {
+  color: #d7b3ff;
+  font-weight: 700;
+}
+
+.quick-activation {
+  min-width: 26px;
+  min-height: 26px;
+  margin-left: 10px;
+  border-radius: 999px;
+  background: alpha(@accent_bg_color, 0.16);
+  color: @accent_secondary_color;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+child:selected .quick-activation {
+  background: alpha(@accent_secondary_color, 0.24);
+  color: @theme_fg_color;
+}
+
+.actions {
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid alpha(@theme_fg_color, 0.08);
+}
+
+.action {
+  padding: 6px 10px;
+  margin-right: 8px;
+  border-radius: 999px;
+  background: rgba(28, 20, 46, 0.82);
+  border: 1px solid alpha(@accent_bg_color, 0.18);
+}
+
+.action .text {
+  font-size: 11px;
+  color: @theme_fg_secondary_color;
+}
+
+.action .keybind {
+  color: @accent_secondary_color;
+  font-weight: 700;
+}
+
+.preview-box {
+  margin-top: 16px;
+  padding: 16px;
+  border-radius: 18px;
+  background: rgba(19, 14, 31, 0.82);
+  border: 1px solid alpha(@accent_bg_color, 0.18);
+}
+
+.preview-text {
+  color: @theme_fg_secondary_color;
+}
+
+.elephant-hint,
+.placeholder {
+  color: @theme_fg_secondary_color;
+}
+
+
+
+.keybinds {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid alpha(@theme_fg_color, 0.08);
+}
+
+.global-keybinds,
+.item-keybinds {
+  spacing: 12px;
+}
+
+.keybind {
+  min-width: 0;
+}
+
+.keybind-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  opacity: 0.92;
+}
+
+.keybind-button:hover {
+  opacity: 1;
+}
+
+.keybind-label {
+  padding: 3px 8px;
+  border-radius: 8px;
+  border: 1px solid alpha(@accent_secondary_color, 0.28);
+  background: alpha(@accent_secondary_color, 0.06);
+  color: @accent_secondary_color;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.keybind-bind {
+  margin-top: 3px;
+  font-size: 10px;
+  color: alpha(@theme_fg_color, 0.44);
+  text-transform: lowercase;
+}

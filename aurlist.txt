@@ -1,0 +1,14 @@
+battop
+elephant
+elephant-providerlist
+elephant-desktopapplications
+elephant-calc
+elephant-websearch
+elephant-files
+elephant-runner
+elephant-clipboard
+elephant-symbols
+hyprland-share-preview-picker
+wttrbar
+walker
+wlogout
