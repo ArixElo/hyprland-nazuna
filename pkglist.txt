@@ -11,6 +11,8 @@ bluetui
 s-tui
 btop
 cava
+cmake
+cpio
 fastfetch
 fzf
 git
