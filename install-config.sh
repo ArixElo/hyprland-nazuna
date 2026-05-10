@@ -24,13 +24,12 @@ EOF
 function __copy() {
     echo "Copying all configs to ~/.config and other required dirs also changing your terminal and your shell..."
     cp -r */ ~/.config/
-    chsh && sudo chsh &
     cp .zshrc /home/$USER/
     cp starship.toml ~/.config/
     mkdir -p ~/.config/zsh/
     touch ~/.config/zsh/history
     source ~/.zshrc
-    elephant enable service
+    elephant service enable
     echo "Restarting waybar..."
     pkill waybar && hyprctl dispatch exec waybar
     echo "Applying config is done, but for better experience: Change your location for wttrbar, and reboot your machine."
