@@ -33,8 +33,7 @@ They are exact same as my Omarchy config had, but for the new people let me shar
 - `SUPER+A` ~ Opens floating cava visualizer
 - `SUPER+C` ~ Opens VSCode,
 - `SUPER+B` ~ Opens default browser
-- `SUPER+SHIFT+B` ~ Opens bookmarks searching
-- `SUPER+V` ~ Opens clipboard history
+- `SUPER+Y` ~ Opens yazi
 - `Print` ~ Screenshot of a app
 - `SUPER+Print` ~ Screenshot of whole window
 - `SUPER+SHIFT+Print` ~ Screenshot of a selected region
