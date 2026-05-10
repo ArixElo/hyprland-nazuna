@@ -23,6 +23,9 @@ Or, if you don't like scripts somehow, then here's what packages you need in ord
 - `starship` ~ for the looks in zsh.
 - `kitty` ~ Default terminal which I use in that config.
 
+## Important info:
+- **You need to manually change your shell from bash to zsh for your user and root respectively with `chsh` and set `/bin/zsh` after so logout or reboot.**
+
 ## Binds
 They are exact same as my Omarchy config had, but for the new people let me share them also: 
 - `SUPER+ESC` ~ Power Menu
