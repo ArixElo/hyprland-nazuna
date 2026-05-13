@@ -62,7 +62,7 @@
     "critical-threshold": 95,
     "format-critical": "{temperatureC}°C ",
     "format": "{temperatureC}°C ",
-    "on-click": "hyprctl dispatch exec '[float;center]' kitty s-tui"
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty s-tui", { float = true })'"
 },
 "custom/power": {
     "format": "󰐥",
@@ -82,7 +82,7 @@
     "format-connected": "󰂱",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "hyprctl dispatch exec '[float;center]' kitty bluetui"
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty bluetui", { float = true })'"
   },
 
   
@@ -104,7 +104,7 @@
     "format": "{capacity}% {icon}",
     "format-discharging": "{capacity}% {icon}",
     "format-charging": "{capacity}% {icon}",
-    "on-click": "hyprctl dispatch exec '[float;center]' kitty battop",
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty battop", { float = true })'",
     "format-plugged": "",
     "format-icons": {
       "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
@@ -125,7 +125,7 @@
     "format": "{capacity}% {icon}",
     "format-discharging": "{capacity}% {icon}",
     "format-charging": "{capacity}% {icon}",
-    "on-click": "hyprctl dispatch exec '[float;center]' kitty battop",
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty battop", { float = true })'",
     "format-plugged": "",
     "format-icons": {
       "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
@@ -150,7 +150,7 @@
     "tooltip-format-wifi": "{essid} ",
     "tooltip-format-ethernet": "󰈀",
     "tooltip-format-disconnected": "Disconnected",
-    "on-click": "hyprctl dispatch exec '[float;center]' kitty impala",
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty impala", { float = true })'",
     "max-length": 50
   },
   
@@ -166,7 +166,7 @@
       "car": "",
       "default": ["", "", ""]
     },
-    "on-click": "hyprctl dispatch exec '[float;center]' kitty wiremix"
+    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty wiremix", { float = true })'"
   },
     "group/tray-expander": {
     "orientation": "inherit",
