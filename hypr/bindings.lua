@@ -1,3 +1,11 @@
+-- Define apps
+local terminal = "kitty"
+local fileManager = "nautilus"
+local menu = "walker"
+local browser = "vivaldi"
+local discord = "discord"
+local telegram = "Telegram"
+
 -- Apps
 hl.bind("SUPER + Return",   hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + B",        hl.dsp.exec_cmd(browser))

@@ -33,12 +33,11 @@ hl.config({
 })
 
 -- Bezier beziers
-hl.bezier("easeOutQuint",    { type = "bezier", points = { {0.23, 1}, {0.32, 1} } })
-hl.bezier("easeInOutCubic",  { type = "bezier", points = { {0.65, 0.05}, {0.36, 1} } })
-hl.bezier("linear",          { type = "bezier", points = { {0, 0}, {1, 1} } })
-hl.bezier("almostLinear",    { type = "bezier", points = { {0.5, 0.5}, {0.75, 1.0} } })
-hl.bezier("quick",           { type = "bezier", points = { {0.15, 0}, {0.1, 1} } })
-
+hl.bezier("easeOutQuint",    0.23, 1,    0.32, 1)
+hl.bezier("easeInOutCubic",  0.65, 0.05, 0.36, 1)
+hl.bezier("linear",          0,    0,    1,    1)
+hl.bezier("almostLinear",    0.5,  0.5,  0.75, 1.0)
+hl.bezier("quick",           0.15, 0,    0.1,  1)
 -- Animations
 hl.animation({ leaf = "global",        enabled = true,  speed = 10,   bezier = "default" })
 hl.animation({ leaf = "border",        enabled = true,  speed = 5.39, bezier = "easeOutQuint" })
