@@ -10,5 +10,6 @@ elephant-clipboard
 elephant-symbols
 hyprland-share-preview-picker
 wttrbar
+waybar-cava-git
 walker
 wlogout

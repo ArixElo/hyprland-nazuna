@@ -29,21 +29,23 @@ Or, if you don't like scripts somehow, then here's what packages you need in ord
 
 ## Binds
 They are exact same as my Omarchy config had, but for the new people let me share them also: 
-- `SUPER+ESC` ~ Power Menu
-- `SUPER+SPACE` ~ Opens app launcher (walker)
-- `SUPER+A` ~ Opens floating cava visualizer
+- `SUPER+ESC` ~ Power menu,
+- `SUPER+SPACE` ~ Opens app launcher (walker),
+- `SUPER+A` ~ Opens floating cava visualizer,
 - `SUPER+C` ~ Opens VSCode,
-- `SUPER+B` ~ Opens default browser
-- `SUPER+Y` ~ Opens yazi
-- `Print` ~ Screenshot of a app
-- `SUPER+Print` ~ Screenshot of whole window
-- `SUPER+SHIFT+Print` ~ Screenshot of a selected region
+- `SUPER+B` ~ Opens default browser,
+- `SUPER+Y` ~ Opens yazi,
+- `Print` ~ Screenshot of a app,
+- `SUPER+Print` ~ Screenshot of whole window,
+- `SUPER+SHIFT+Print` ~ Screenshot of a selected region,
 - `SUPER+D` ~ Opens Discord,
 - `SUPER+T` ~ Opens Telegram,
 - `SUPER+F` ~ Opens File Manager,
-- `SUPER+SHIFT+T` ~ toggle floating or tiling mode (default bind is `SUPER+T`, however as you see that is already reserved by Telegram bind)
+- `SUPER+P` ~ Toggles pseudo windows (since Hyprland 0.55+)
+- `SUPER+R` ~ Reloads waybar,
+- `SUPER+SHIFT+T` ~ toggle floating or tiling mode (default bind is `SUPER+T`, however as you see that is already reserved by Telegram bind),
 - `SUPER+SHIFT+F` ~ Goes to fullscreen mode (that's only one shift bind which I sometimes use),
-- `SUPER+L` ~ Quick account lock (enter password or use your finger to unlock your desktop)
+- `SUPER+L` ~ Quick account lock (enter password or use your finger to unlock your desktop),
 - `SUPER+M` ~ Opens Pear Desktop (YouTube Music client, however you can change it to your preferred music player),
 - `SUPER+Q` ~ Quit apps.
 
