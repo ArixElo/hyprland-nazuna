@@ -19,6 +19,15 @@ hl.env("XDG_SESSION_TYPE","wayland")
   }
 })
 
+-------------------------------
+---- ENVIRONMENT VARIABLES ----
+-------------------------------
+
+hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("QT_QPA_PLATFORMTHEME","qt6ct")
+hl.env("GTK_THEME", "Adwaita:dark")
+
 -- Use XCompose file
 hl.env("XCOMPOSEFILE", "~/.XCompose")
 
