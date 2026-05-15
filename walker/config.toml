@@ -31,7 +31,7 @@ anchor_right = true
 "symbols" = 4
 
 [placeholders]
-"default" = { input = "Search the night", list = "Nothing in the dark" }
+"default" = { input = "Search the night...", list = "Nothing in the dark :(" }
 
 [keybinds]
 close = ["Escape"]
