@@ -7,11 +7,11 @@
   "margin-left": 10,
   "margin-right": 10,
   
-  "modules-left": ["hyprland/workspaces", "backlight","mpris", "temperature"],
+  "modules-left": ["ext/workspaces", "backlight","mpris", "temperature"],
   "modules-center": ["hyprland/window"],
   "modules-right": ["clock","custom/weather","group/tray-expander","network", "bluetooth","pulseaudio", "battery", "battery#bat1","custom/power"],
   
-  "hyprland/workspaces": {
+  "ext/workspaces": {
     "format": "{icon}",
     "format-icons": {
       "1": "一",
@@ -62,7 +62,7 @@
     "critical-threshold": 95,
     "format-critical": "{temperatureC}°C ",
     "format": "{temperatureC}°C ",
-    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty s-tui", { float = true })'"
+    "on-click": "~/.config/hypr/scripts/s-tui.sh"
 },
 "custom/power": {
     "format": "󰐥",
@@ -82,7 +82,7 @@
     "format-connected": "󰂱",
     "format-no-controller": "",
     "tooltip-format": "Devices connected: {num_connections}",
-    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty bluetui", { float = true })'"
+    "on-click": "~/.config/hypr/scripts/bluetui.sh"
   },
 
   
@@ -104,7 +104,7 @@
     "format": "{capacity}% {icon}",
     "format-discharging": "{capacity}% {icon}",
     "format-charging": "{capacity}% {icon}",
-    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty battop", { float = true })'",
+    "on-click": "~/.config/hypr/scripts/battop.sh",
     "format-plugged": "",
     "format-icons": {
       "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
@@ -125,7 +125,7 @@
     "format": "{capacity}% {icon}",
     "format-discharging": "{capacity}% {icon}",
     "format-charging": "{capacity}% {icon}",
-    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty battop", { float = true })'",
+    "on-click": "~/.config/hypr/scripts/battop.sh",
     "format-plugged": "",
     "format-icons": {
       "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
@@ -150,7 +150,7 @@
     "tooltip-format-wifi": "{essid} ",
     "tooltip-format-ethernet": "󰈀",
     "tooltip-format-disconnected": "Disconnected",
-    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty impala", { float = true })'",
+    "on-click": "~/.config/hypr/scripts/impala.sh",
     "max-length": 50
   },
   
@@ -166,7 +166,7 @@
       "car": "",
       "default": ["", "", ""]
     },
-    "on-click": "hyprctl dispatch 'hl.dsp.exec_cmd("kitty wiremix", { float = true })'"
+    "on-click": "~/.config/hypr/scripts/wiremix.sh"
   },
     "group/tray-expander": {
     "orientation": "inherit",
