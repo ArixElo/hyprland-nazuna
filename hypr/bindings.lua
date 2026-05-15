@@ -22,8 +22,8 @@ hl.bind("SUPER + ESCAPE",   hl.dsp.exec_cmd("wlogout"))
 hl.bind("SUPER + L",        hl.dsp.exec_cmd("hyprlock"))
 
 -- Window management
-hl.bind("SUPER SHIFT + F",  hl.dsp.window.fullscreen())
-hl.bind("SUPER SHIFT + T",  hl.dsp.window.float({ action = "toggle" }))
+hl.bind("SUPER + SHIFT + F",  hl.dsp.window.fullscreen())
+hl.bind("SUPER + SHIFT + T",  hl.dsp.window.float({ action = "toggle" }))
 hl.bind("SUPER + P",        hl.dsp.window.pseudo())
 hl.bind("SUPER + J",        hl.dsp.layout("togglesplit"))
 
@@ -37,12 +37,12 @@ hl.bind("SUPER + down",     hl.dsp.focus({ direction = "down" }))
 for i = 1, 10 do
     local key = i % 10
     hl.bind("SUPER + " .. key,         hl.dsp.focus({ workspace = i }))
-    hl.bind("SUPER SHIFT + " .. key,   hl.dsp.window.move({ workspace = i }))
+    hl.bind("SUPER + SHIFT + " .. key,   hl.dsp.window.move({ workspace = i }))
 end
 
 -- Scratchpad
 hl.bind("SUPER + S",        hl.dsp.workspace.toggle_special("magic"))
-hl.bind("SUPER SHIFT + S",  hl.dsp.window.move({ workspace = "special:magic" }))
+hl.bind("SUPER + SHIFT + S",  hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll workspaces
 hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
@@ -51,7 +51,7 @@ hl.bind("SUPER + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
 -- Screenshots
 hl.bind("Print",             hl.dsp.exec_cmd("hyprshot -m window"))
 hl.bind("SUPER + Print",     hl.dsp.exec_cmd("hyprshot -m output"))
-hl.bind("SUPER SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m region"))
+hl.bind("SUPER + SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m region"))
 
 -- Move/resize z myszą
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(),   { mouse = true })
