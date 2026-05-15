@@ -20,8 +20,6 @@ local telegram = "Telegram"
    hl.exec_cmd("walker --gapplication-service")
    hl.exec_cmd("waybar")
    hl.exec_cmd("wpaperd")
-   hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3-dark"")
-   hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"")
  end)
 
 
