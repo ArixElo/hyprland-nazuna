@@ -1,65 +1,64 @@
 -- Apps
-hl.bind("SUPER", "Return",  "exec", terminal)
-hl.bind("SUPER", "B",       "exec", browser)
-hl.bind("SUPER", "D",       "exec", discord)
-hl.bind("SUPER", "A",       "exec", "~/.config/hypr/scripts/toggle-cava.sh")
-hl.bind("SUPER", "C",       "exec", "code")
-hl.bind("SUPER", "Q",       "killactive")
-hl.bind("SUPER", "T",       "exec", telegram)
-hl.bind("SUPER", "M",       "exec", "pear-desktop")
-hl.bind("SUPER", "F",       "exec", fileManager)
-hl.bind("SUPER", "Y", hl.dsp.exec_cmd("kitty yazi", { float = true }))
-hl.bind("SUPER", "SPACE",   "exec", menu)
-hl.bind("SUPER", "ESCAPE",  "exec", "wlogout")
-hl.bind("SUPER", "L",       "exec", "hyprlock")
+hl.bind("SUPER + Return",   hl.dsp.exec_cmd(terminal))
+hl.bind("SUPER + B",        hl.dsp.exec_cmd(browser))
+hl.bind("SUPER + D",        hl.dsp.exec_cmd(discord))
+hl.bind("SUPER + A",        hl.dsp.exec_cmd("~/.config/hypr/scripts/toggle-cava.sh"))
+hl.bind("SUPER + C",        hl.dsp.exec_cmd("code"))
+hl.bind("SUPER + Q",        hl.dsp.window.close())
+hl.bind("SUPER + T",        hl.dsp.exec_cmd(telegram))
+hl.bind("SUPER + M",        hl.dsp.exec_cmd("pear-desktop"))
+hl.bind("SUPER + F",        hl.dsp.exec_cmd(fileManager))
+hl.bind("SUPER + Y",        hl.dsp.exec_cmd("kitty yazi", { float = true }))
+hl.bind("SUPER + SPACE",    hl.dsp.exec_cmd(menu))
+hl.bind("SUPER + ESCAPE",   hl.dsp.exec_cmd("wlogout"))
+hl.bind("SUPER + L",        hl.dsp.exec_cmd("hyprlock"))
 
 -- Window management
-hl.bind("SUPER SHIFT", "F", "fullscreen")
-hl.bind("SUPER SHIFT", "T", "togglefloating")
-hl.bind("SUPER", "P",       "pseudo")
-hl.bind("SUPER", "J",       "togglesplit")
+hl.bind("SUPER SHIFT + F",  hl.dsp.window.fullscreen())
+hl.bind("SUPER SHIFT + T",  hl.dsp.window.float({ action = "toggle" }))
+hl.bind("SUPER + P",        hl.dsp.window.pseudo())
+hl.bind("SUPER + J",        hl.dsp.layout("togglesplit"))
 
 -- Focus
-hl.bind("SUPER", "left",  "movefocus", "l")
-hl.bind("SUPER", "right", "movefocus", "r")
-hl.bind("SUPER", "up",    "movefocus", "u")
-hl.bind("SUPER", "down",  "movefocus", "d")
+hl.bind("SUPER + left",     hl.dsp.focus({ direction = "left" }))
+hl.bind("SUPER + right",    hl.dsp.focus({ direction = "right" }))
+hl.bind("SUPER + up",       hl.dsp.focus({ direction = "up" }))
+hl.bind("SUPER + down",     hl.dsp.focus({ direction = "down" }))
 
 -- Workspaces
-for i = 1, 9 do
-    hl.bind("SUPER",       tostring(i), "workspace",       tostring(i))
-    hl.bind("SUPER SHIFT", tostring(i), "movetoworkspace", tostring(i))
+for i = 1, 10 do
+    local key = i % 10
+    hl.bind("SUPER + " .. key,         hl.dsp.focus({ workspace = i }))
+    hl.bind("SUPER SHIFT + " .. key,   hl.dsp.window.move({ workspace = i }))
 end
-hl.bind("SUPER",       "0", "workspace",       "10")
-hl.bind("SUPER SHIFT", "0", "movetoworkspace", "10")
 
 -- Scratchpad
-hl.bind("SUPER",       "S", "togglespecialworkspace", "magic")
-hl.bind("SUPER SHIFT", "S", "movetoworkspace",        "special:magic")
+hl.bind("SUPER + S",        hl.dsp.workspace.toggle_special("magic"))
+hl.bind("SUPER SHIFT + S",  hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll workspaces
-hl.bind("SUPER", "mouse_down", "workspace", "e+1")
-hl.bind("SUPER", "mouse_up",   "workspace", "e-1")
+hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
+hl.bind("SUPER + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
 
 -- Screenshots
-hl.bind("",            "Print", "exec", "hyprshot -m window")
-hl.bind("SUPER",       "Print", "exec", "hyprshot -m output")
-hl.bind("SUPER SHIFT", "Print", "exec", "hyprshot -m region")
+hl.bind("Print",             hl.dsp.exec_cmd("hyprshot -m window"))
+hl.bind("SUPER + Print",     hl.dsp.exec_cmd("hyprshot -m output"))
+hl.bind("SUPER SHIFT + Print", hl.dsp.exec_cmd("hyprshot -m region"))
 
--- Move/resize with mouse
-hl.bindm("SUPER", "mouse:272", "movewindow")
-hl.bindm("SUPER", "mouse:273", "resizewindow")
+-- Move/resize z myszą
+hl.bind("SUPER + mouse:272", hl.dsp.window.drag(),   { mouse = true })
+hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
 -- Volume & brightness
-hl.binde("", "XF86AudioRaiseVolume",  "exec", "wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+")
-hl.binde("", "XF86AudioLowerVolume",  "exec", "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-")
-hl.binde("", "XF86AudioMute",         "exec", "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle")
-hl.binde("", "XF86AudioMicMute",      "exec", "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle")
-hl.binde("", "XF86MonBrightnessUp",   "exec", "brightnessctl -e4 -n2 set 5%+")
-hl.binde("", "XF86MonBrightnessDown", "exec", "brightnessctl -e4 -n2 set 5%-")
+hl.bind("XF86AudioRaiseVolume",  hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"), { locked = true, repeating = true })
+hl.bind("XF86AudioLowerVolume",  hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"),      { locked = true, repeating = true })
+hl.bind("XF86AudioMute",         hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"),     { locked = true, repeating = true })
+hl.bind("XF86AudioMicMute",      hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle"),   { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessUp",   hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%+"),                  { locked = true, repeating = true })
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-"),                  { locked = true, repeating = true })
 
 -- Media keys
-hl.bindl("", "XF86AudioNext",  "exec", "playerctl next")
-hl.bindl("", "XF86AudioPause", "exec", "playerctl play-pause")
-hl.bindl("", "XF86AudioPlay",  "exec", "playerctl play-pause")
-hl.bindl("", "XF86AudioPrev",  "exec", "playerctl previous")
+hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),        { locked = true })
+hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"),  { locked = true })
+hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"),  { locked = true })
+hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),    { locked = true })
