@@ -11,7 +11,7 @@ EOF
 
     echo "Checking if you have installed required packages..."
     
-    if yay -Qi < pkglist.txt &>/dev/null && yay -Qi aurlist.txt &>/dev/null; then
+    if yay -Qi < pkglist.txt &>/dev/null && yay -Qi < aurlist.txt &>/dev/null; then
         echo "It looks like you have already installed all packages"
         __copy
     else
