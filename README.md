@@ -33,7 +33,7 @@ They are exact same as my Omarchy config had, but for the new people let me shar
 - `SUPER+SPACE` ~ Opens app launcher (walker),
 - `SUPER+A` ~ Opens floating cava visualizer,
 - `SUPER+C` ~ Opens VSCode,
-- `SUPER+B` ~ Opens Steam,
+- `SUPER+G` ~ Opens Steam,
 - `SUPER+B` ~ Opens default browser,
 - `SUPER+Y` ~ Opens yazi,
 - `Print` ~ Screenshot of a app,
