@@ -8,6 +8,7 @@ noto-fonts-extra
 brightnessctl
 impala
 steam
+nvim
 bluetui
 s-tui
 btop
