@@ -24,6 +24,7 @@ Or, if you don't like scripts somehow, then here's what packages you need in ord
 - `kitty` ~ Default terminal which I use in that config.
 
 ## Important info:
+- The branch with lua only config is called `nazuna-lua`, and it will be used by default on version 0.58 of Hyprland since they moved from hyprlang to Lua.
 - **You need to manually change your shell from bash to zsh for your user and root respectively with `chsh` and set `/bin/zsh` after so logout or reboot.**
 
 ## Binds
