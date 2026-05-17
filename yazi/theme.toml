@@ -38,9 +38,9 @@ rules = [
   { mime = "inode/symlink", fg = "#c58bff", bold = true },
 ]
 
-[icons]
+[icon]
 # Subtelnie "nocny" zestaw, bez przesady z neonem
-dirs = [
+prepend_dirs = [
   { name = "Desktop", text = "󰍹", fg = "#f7a8c9" },
   { name = "Documents", text = "󰈙", fg = "#d8a6ff" },
   { name = "Downloads", text = "󰉍", fg = "#ff7fb9" },
