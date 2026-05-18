@@ -13,3 +13,4 @@ wttrbar
 waybar-cava-git
 walker
 wlogout
+pear-desktop

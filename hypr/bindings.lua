@@ -6,6 +6,7 @@ local browser = "vivaldi"
 local discord = "discord"
 local telegram = "Telegram"
 local steam = "steam"
+local music = "pear-desktop"
 -- Apps
 hl.bind("SUPER + Return", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + B", hl.dsp.exec_cmd(browser))
@@ -16,7 +17,7 @@ hl.bind("SUPER + C", hl.dsp.exec_cmd("code"))
 hl.bind("SUPER + Q", hl.dsp.window.close())
 hl.bind("SUPER + R", hl.dsp.exec_cmd("~/.config/hypr/scripts/waybar.sh"))
 hl.bind("SUPER + T", hl.dsp.exec_cmd(telegram))
-hl.bind("SUPER + M", hl.dsp.exec_cmd("pear-desktop"))
+hl.bind("SUPER + M", hl.dsp.exec_cmd(music))
 hl.bind("SUPER + F", hl.dsp.exec_cmd(fileManager))
 hl.bind("SUPER + Y", hl.dsp.exec_cmd("kitty yazi", { float = true }))
 hl.bind("SUPER + SPACE", hl.dsp.exec_cmd(menu))
