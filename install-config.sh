@@ -31,7 +31,7 @@ function __copy() {
     source ~/.zshrc
     elephant service enable
     echo "Restarting waybar..."
-    pkill waybar && hyprctl dispatch exec waybar
+    pkill waybar && hyprctl dispatch 'hl.dsp.exec_cmd("waybar")'
     echo "Applying config is done, but for better experience: Change your location for wttrbar, and reboot your machine."
 }
 
