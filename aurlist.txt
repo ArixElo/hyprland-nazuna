@@ -8,7 +8,7 @@ elephant-files
 elephant-runner
 elephant-clipboard
 elephant-symbols
-hyprland-share-preview-picker-git
+hyprland-preview-share-picker-git
 wttrbar
 waybar-cava-git
 walker
