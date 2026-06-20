@@ -34,6 +34,7 @@ They are exact same as my Omarchy config had, but for the new people let me shar
 - `SUPER+A` ~ Opens floating cava visualizer,
 - `SUPER+C` ~ Opens VSCode,
 - `SUPER+G` ~ Opens Steam,
+- `SUPER+U` ~ Opens LACT,
 - `SUPER+B` ~ Opens default browser,
 - `SUPER+Y` ~ Opens yazi,
 - `Print` ~ Screenshot of a app,
