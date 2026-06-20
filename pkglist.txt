@@ -15,6 +15,7 @@ s-tui
 btop
 cava
 cmake
+lact
 cpio
 fastfetch
 fzf
