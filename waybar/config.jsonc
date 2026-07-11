@@ -58,7 +58,7 @@
  "temperature": {
     //"thermal-zone": 2, // for t440p
     // "thermal-zone": 3, // for t460
-    "hwmon-path": "/sys/class/hwmon/hwmon0/temp1_input", // for the Dark Side
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input", // for the Dark Side
     "critical-threshold": 95,
     "format-critical": "{temperatureC}°C ",
     "format": "{temperatureC}°C ",
