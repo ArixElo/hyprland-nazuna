@@ -32,6 +32,9 @@ hl.bind("SUPER + SHIFT + T", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("SUPER + P", hl.dsp.window.pseudo())
 hl.bind("SUPER + J", hl.dsp.layout("togglesplit"))
 
+-- Keybinds cheatsheet
+hl.bind("SUPER + SHIFT + SLASH", hl.dsp.exec_cmd("~/.config/hypr/scripts/walker-keybinds-categories.sh"))
+
 -- Focus
 hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }))
 hl.bind("SUPER + right", hl.dsp.focus({ direction = "right" }))

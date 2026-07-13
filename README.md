@@ -49,6 +49,7 @@ They are exact same as my Omarchy config had, but for the new people let me shar
 - `SUPER+SHIFT+F` ~ Goes to fullscreen mode (that's only one shift bind which I sometimes use),
 - `SUPER+L` ~ Quick account lock (enter password or use your finger to unlock your desktop),
 - `SUPER+M` ~ Opens Pear Desktop (YouTube Music client, however you can change it to your preferred music player),
+- `SUPER+ SHIFT + /` ~ Opens the keybinds cheatsheet,
 - `SUPER+Q` ~ Quit apps.
 
 ## Additional info: 
