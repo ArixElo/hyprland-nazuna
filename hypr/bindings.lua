@@ -1,10 +1,10 @@
 -- Define apps
 local terminal = "kitty"
 local fileManager = "nautilus"
-local menu = "walker"
+local menu = "rofi -show drun -theme ~/.config/rofi/nazuna.rasi"
 local browser = "vivaldi"
 local discord = "discord"
-local telegram = "Telegram"
+local telegram = "telegram-desktop"
 local steam = "steam"
 local lact = "lact"
 local music = "pear-desktop"
@@ -33,8 +33,8 @@ hl.bind("SUPER + P", hl.dsp.window.pseudo())
 hl.bind("SUPER + J", hl.dsp.layout("togglesplit"))
 
 -- Keybinds cheatsheet
-hl.bind("SUPER + SHIFT + SLASH", hl.dsp.exec_cmd("~/.config/hypr/scripts/walker-keybinds-categories.sh"))
-
+hl.bind("SUPER + SLASH", hl.dsp.exec_cmd("~/.config/hypr/scripts/rofi-keybinds-cheatsheet-actionable.sh"))
+hl.bind("SUPER + SHIFT + SLASH", hl.dsp.exec_cmd("~/.config/hypr/scripts/rofi-keybinds-cheatsheet.sh"))
 -- Focus
 hl.bind("SUPER + left", hl.dsp.focus({ direction = "left" }))
 hl.bind("SUPER + right", hl.dsp.focus({ direction = "right" }))

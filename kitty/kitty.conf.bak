@@ -159,9 +159,9 @@ map kitty_mod+0      change_font_size all 0
 map kitty_mod+f11 toggle_fullscreen
 map kitty_mod+u    kitten unicode_input
 allow_remote_control yes
-symbol_map U+2580-U+259F Noto Sans Mono
+
 
 # BEGIN_KITTY_THEME
-# 1984 Dark
+# Rosé Pine
 include current-theme.conf
 # END_KITTY_THEME

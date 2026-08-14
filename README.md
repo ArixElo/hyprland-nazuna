@@ -1,36 +1,35 @@
 # hyprland-nazuna
-**Welcome to my Hyprland config, after making my own [Omarchy distro config](https://github.com/ArixElo/my-omarchy-config), I thought, what if I __try__ making my own Hyprland config for distro that i use for many years, which is Arch. So here's my take on making a config inspired by my favourite anime character: Nazuna Nanakusa from Call of the Night. P.S: I spent over 15h doing that config without sleep and eating.**
+**Welcome to my Hyprland config, after making my own [Omarchy distro config](https://github.com/ArixElo/my-omarchy-config), I thought, what if I __try__ making my own Hyprland config for distro that i use for many years, which is Arch. However due to recent AUR incidents, I switched to Gentoo almost a month ago, so a couple things are changed in that branch. So here's my take on making a config inspired by my favourite anime character: Nazuna Nanakusa from Call of the Night. P.S: I spent over 15h doing that config without sleep and eating.**
 
 ## Prerequisites and usage guide
-- Use dedicated script for automatic install packages and applying config: `./install-config.sh`
-Or, if you don't like scripts somehow, then here's what packages you need in order to apply everything without any issues:
 - `hyprland` ~ it's obvious.
 - `waybar` ~ I liked how Omarchy had their waybar looking, so I went with similiar looks, with some differences.
-- `walker` ~ App launcher with looks and functionality.
+- `rofi` ~ App launcher with simple looks.
 - `wpaperd` ~ for changing wallpapers each reboot, the path will be set to `~/.config/nazuna-walls` but for copyright reasons, i can't post any walls that I use here.
 - `hyprshot` ~ for making screenshots.
 - `mako` ~ notification daemon.
 - `wlogout` ~ Power menu.
-- `dolphin` ~ GUI file manager.
+- `nautilus` ~ GUI file manager.
 - `yazi` ~ TUI file manager.
 - `wiremix` ~ Audio managing.
 - `battop` ~ Battery stats.
 - `fastfetch` ~ Displaying system info.
-- `ly` ~ Default login manager.
+- `tuigreet` ~ Default login manager.
 - `cava`  ~ for my theme.
+- `linux-wallpaperengine` ~ For using Wallpaper Engine wallpapers (take a note that "puppet" wallpapers don't work properly yet.)
 - `wttrbar` ~ for weather in waybar, available on **AUR**,
-- `zsh` ~ my favourite shell, with syntax higlighting and autocompletion (While using the install-config script it will ask you to provide the shell path for your user and root respectively, use `/bin/zsh`).
+- `zsh` ~ my favourite shell, with syntax higlighting and autocompletion also with autosuggestions,
 - `starship` ~ for the looks in zsh.
 - `kitty` ~ Default terminal which I use in that config.
 
 ## Important info:
-- The branch with lua only config is called `nazuna-lua`, and it will be used by default on version 0.58 of Hyprland since they moved from hyprlang to Lua.
+- The branch with lua only config is called `nazuna-lua`, and it will be used by default on version 0.58 of Hyprland since they moved from hyprlang to Lua, and that branch is **Only for Arch** the branch for Gentoo is called: `nazuna-gentoo`.
 - **You need to manually change your shell from bash to zsh for your user and root respectively with `chsh` and set `/bin/zsh` after so logout or reboot.**
 
 ## Binds
 They are exact same as my Omarchy config had, but for the new people let me share them also: 
 - `SUPER+ESC` ~ Power menu,
-- `SUPER+SPACE` ~ Opens app launcher (walker),
+- `SUPER+SPACE` ~ Opens app launcher (rofi),
 - `SUPER+A` ~ Opens floating cava visualizer,
 - `SUPER+C` ~ Opens VSCode,
 - `SUPER+G` ~ Opens Steam,
@@ -49,7 +48,7 @@ They are exact same as my Omarchy config had, but for the new people let me shar
 - `SUPER+SHIFT+F` ~ Goes to fullscreen mode (that's only one shift bind which I sometimes use),
 - `SUPER+L` ~ Quick account lock (enter password or use your finger to unlock your desktop),
 - `SUPER+M` ~ Opens Pear Desktop (YouTube Music client, however you can change it to your preferred music player),
-- `SUPER+ SHIFT + /` ~ Opens the keybinds cheatsheet,
+- `SUPER+/` ~ Opens the keybinds cheatsheet,
 - `SUPER+Q` ~ Quit apps.
 
 ## Additional info: 

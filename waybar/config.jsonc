@@ -36,7 +36,7 @@
     "format": "{}°C",
     "tooltip": true,
     "interval": 3600,
-    "exec": "wttrbar --location Koszalin --lang pl --hide-conditions --nerd",
+    "exec": "~/.cargo/bin/wttrbar --location Koszalin --lang pl --hide-conditions --nerd",
     "return-type": "json"
   },
 

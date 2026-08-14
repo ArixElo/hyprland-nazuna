@@ -1,0 +1,114 @@
+/* ~/.config/rofi/nazuna.rasi
+ * Motyw inspirowany Nazuną Nanakusą (Call of the Night)
+ * Paleta: nocna czerń/granat, róż-fiolet, błękit oczu
+ */
+
+* {
+    bg0:        #1a1520e6; /* tło główne, lekko transparentne */
+    bg1:        #2a2035ff; /* tło elementów */
+    bg-selected: #804f6dff; /* zaznaczenie - ciemny fiolet */
+    fg0:        #dcc4c8ff; /* tekst - pudrowy róż */
+    fg1:        #948397ff; /* tekst wygaszony */
+    accent:     #a1869bff; /* akcent różowo-fioletowy */
+    eye-blue:   #84bdd1ff; /* akcent błękitny - oczy Nazuny */
+    urgent:     #b23a5aff; /* czerwień wampirza */
+    border-col: #b968c7ff; /* nowy border - fioletowy */
+
+    background-color:   transparent;
+    text-color:          @fg0;
+    font:                "JetBrains Mono NL 11";
+}
+
+window {
+    background-color:   @bg0;
+    border:              2px;
+    border-color:        @border-col;
+    border-radius:       16px;
+    width:               32%;
+    padding:             16px;
+    location:            center;
+}
+
+mainbox {
+    background-color:   transparent;
+    children:            [ inputbar, listview ];
+    spacing:             12px;
+}
+
+inputbar {
+    background-color:   @bg1;
+    border-radius:       12px;
+    padding:             10px 14px;
+    children:            [ prompt, entry ];
+    spacing:             8px;
+    border:              1px;
+    border-color:        @border-col;
+}
+
+prompt {
+    text-color:          @eye-blue;
+    font:                "JetBrains Mono NL Bold 11";
+}
+
+entry {
+    text-color:          @fg0;
+    placeholder:         "Szukaj w nocy...";
+    placeholder-color:   @fg1;
+    font:                "JetBrains Mono NL 11";
+}
+
+listview {
+    background-color:   transparent;
+    lines:               8;
+    columns:             1;
+    spacing:             4px;
+    cycle:               true;
+    dynamic:             true;
+    scrollbar:           false;
+}
+
+element {
+    background-color:   transparent;
+    text-color:          @fg0;
+    padding:             8px 12px;
+    border-radius:       10px;
+    font:                "JetBrains Mono NL 11";
+}
+
+element selected {
+    background-color:   @bg-selected;
+    text-color:          #ffffffff;
+    border:              1px;
+    border-color:        @border-col;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:          inherit;
+    vertical-align:      0.5;
+    font:                "JetBrains Mono NL 11";
+}
+
+element-icon {
+    size:                24px;
+    border-radius:       6px;
+}
+
+message {
+    background-color:   @bg1;
+    border-radius:       10px;
+    padding:             8px;
+}
+
+textbox {
+    text-color:          @accent;
+    font:                "JetBrains Mono NL 11";
+}
+
+error-message {
+    background-color:   @urgent;
+    text-color:          #ffffffff;
+    border-radius:       10px;
+    padding:             10px;
+    font:                "JetBrains Mono NL 11";
+}

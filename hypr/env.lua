@@ -15,6 +15,7 @@ hl.env("XDG_SESSION_DESKTOP", "Hyprland")
 -- Cursor & theme
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_THEME", "Adwaita")
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
 hl.env("GTK_THEME", "adw-gtk3:dark")
 
