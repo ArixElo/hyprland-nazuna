@@ -20,5 +20,5 @@ require("monitors")
 require("lookandfeel")
 require("env")
 require("windows")
-require("workspaces") -- Workspaces for my main PC
+--require("workspaces") -- Workspaces for my main PC
 require("bindings")
