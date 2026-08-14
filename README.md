@@ -13,6 +13,8 @@
 - `yazi` ~ TUI file manager.
 - `wiremix` ~ Audio managing.
 - `battop` ~ Battery stats.
+- `nmtui` ~ For managing network connection.
+- `bluetui` ~ For Bluetooth management.
 - `fastfetch` ~ Displaying system info.
 - `tuigreet` ~ Default login manager.
 - `cava`  ~ for my theme.
