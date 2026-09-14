@@ -7,7 +7,7 @@ local discord = "discord"
 local telegram = "telegram-desktop"
 local steam = "steam"
 local lact = "lact"
-local music = "pear-desktop"
+local music = "pear-desktop-bin"
 -- Apps
 hl.bind("SUPER + Return", hl.dsp.exec_cmd(terminal))
 hl.bind("SUPER + B", hl.dsp.exec_cmd(browser))
