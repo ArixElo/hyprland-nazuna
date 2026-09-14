@@ -9,7 +9,7 @@
    hl.exec_cmd("~/.cargo/bin/wpaperd")
    hl.exec_cmd("hyprctl setcursor Adwaita 24")
    hl.exec_cmd("linux-wallpaperengine --screen-root DP-1 --bg 3568585209 -f 180  --scaling fill --clamp border")
-   hl.exec_cmd("linux-wallpaperengine ~/.config/hypr/scripts/wall.sh")
+   hl.exec_cmd("~/.config/hypr/scripts/wall.sh")
  end)
 
 
