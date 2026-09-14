@@ -7,7 +7,7 @@
   "margin-left": 10,
   "margin-right": 10,
   
-  "modules-left": ["hyprland/workspaces", "backlight","mpris", "temperature"],
+  "modules-left": ["hyprland/workspaces","mpris", "temperature"],
   "modules-center": ["hyprland/window"],
   "modules-right": ["clock","custom/weather","group/tray-expander","network", "bluetooth","pulseaudio", "battery", "battery#bat1","custom/power"],
   
