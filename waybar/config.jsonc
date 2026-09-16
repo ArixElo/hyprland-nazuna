@@ -3,6 +3,7 @@
   "position": "top",
   "height": 35,
   "spacing": 1,
+  // "output": "DP-1", //Only for my desktop
   "margin-top": 10,
   "margin-left": 10,
   "margin-right": 10,
